@@ -27,6 +27,17 @@ var b1 = document.getElementById("b1");
 var deleteAll = document.getElementById("deleteAll")
 var cart0 = document.getElementById("cart0");
 var help = document.getElementById("help");
+var b = document.getElementById("b")
+var c = document.getElementById("c")
+var d = document.getElementById("d")
+var e = document.getElementById("e")
+
+var b1 = document.getElementById("b1")
+var c1 = document.getElementById("c1")
+var d1 = document.getElementById("d1")
+var e1 = document.getElementById("e1")
+
+var del = document.getElementById("f")
 
 //=============functionSelection====================//
 
@@ -83,7 +94,45 @@ function goToCartPage(){
     console.log("hleo")
   }
 
-  
+  function showB(){
+    b1.textContent = b.textContent
+    b.style.color = "black"
+    c.style.color = "rgba(0, 0, 0, 0.397)"
+    d.style.color = "rgba(0, 0, 0, 0.397)"
+    e.style.color = "rgba(0, 0, 0, 0.397)"
+}
+
+
+function showC(){
+  c1.textContent = c.textContent
+  b.style.color = "rgba(0, 0, 0, 0.397)"
+  c.style.color = "black"
+  d.style.color = "rgba(0, 0, 0, 0.397)"
+  e.style.color = "rgba(0, 0, 0, 0.397)"
+}
+
+function showD(){
+  d1.textContent = d.textContent
+  b.style.color = "rgba(0, 0, 0, 0.397)"
+  c.style.color = "rgba(0, 0, 0, 0.397)"
+  d.style.color = "black"
+  e.style.color = "rgba(0, 0, 0, 0.397)"
+}
+
+function showE(){
+  e1.textContent =e.textContent
+  b.style.color = "rgba(0, 0, 0, 0.397)"
+  c.style.color = "rgba(0, 0, 0, 0.397)"
+  d.style.color = "rgba(0, 0, 0, 0.397)"
+  e.style.color = "black"
+}
+
+function deletingAll(){
+  b1.textContent = ""
+  c1.textContent = ""
+  d1.textContent = ""
+  e1.textContent = ""
+}
 
 
 //=============eventsSelection====================//
@@ -100,3 +149,8 @@ logo.addEventListener("click",goToHome);
 login.addEventListener("click",goToLogin);
 help.addEventListener("click",goToHelpPage);
 cart0.addEventListener("click",goToCartPage);
+b.addEventListener("click",showB)
+c.addEventListener("click",showC)
+d.addEventListener("click",showD)
+e.addEventListener("click",showE)
+del.addEventListener("click",deletingAll)
