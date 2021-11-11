@@ -90,3 +90,17 @@ first.addEventListener("click",goToWomenPage);
   search.addEventListener("click",goToSearchPage)
   help.addEventListener("click",goToHelpPage)
   cart0.addEventListener("click",goToCartPage)
+
+var selectedData = JSON.parse(localStorage.getItem("selectedProduct"))  
+var price = document.getElementById("price");
+var productName = document.getElementById("productName");
+var desc = document.getElementById("desc");
+var color = document.getElementById("color");
+
+var productImage = document.getElementById("productImage");
+
+price.textContent = selectedData.price;
+productName.textContent = selectedData.name;
+desc.textContent = selectedData.desc;
+color.textContent = selectedData.color;
+productImage.src = selectedData.image_url;

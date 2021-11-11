@@ -311,19 +311,23 @@
     margin: 5px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     padding: 10px;
   }
 
   img{
-    height: 300px;
+    height: 450px;
     width: 300px;
+    object-fit: contain;
   }
 
 
   #clothesDiv h2{
     font-size: 14px;
+  }
+  #clothesDiv{
+    text-align: center;
   }
 
  

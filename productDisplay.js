@@ -137,6 +137,6 @@ function displayProduct(zaraData){
 
     function displaySingleProduct(item){
         localStorage.setItem("selectedProduct",JSON.stringify(item))
+        window.location.href = "selectedProduct.html"
        }
-
 }
