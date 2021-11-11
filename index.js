@@ -166,8 +166,8 @@
   }
   //========== toggle functions ends here============ //
 
-  function searchHistory(){
-    console.log("heloo")
+  function goToSearchPage(){
+    window.location.href = "search.html"
   }
 
   function print(){
@@ -196,7 +196,7 @@
   videoSide.addEventListener("click", goToFirstPage);
   tglFwd.addEventListener("click", activation);
   tgl2.addEventListener("click", deactivation1);
-  search.addEventListener("click",searchHistory);
+  search.addEventListener("click",goToSearchPage);
   toggleBar.addEventListener("click",print)
   first.addEventListener("click",goToWomenPage);
   second.addEventListener("click",goToManPage);
