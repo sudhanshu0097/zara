@@ -32,6 +32,8 @@
   var fifth = document.getElementById("fifth")
   var sixth = document.getElementById("sixth")
   var search = document.getElementById("search")
+  var help = document.getElementById("help");
+  var cart0 = document.getElementById("cart0")
   // var inside1 = document.querySelector(".inside1")
 
   //----------------- function section------------------ //
@@ -172,6 +174,14 @@
       console.log("helo")
   }
 
+  function goToHelpPage(){
+    window.location.href = "help.html"
+  }
+
+  function goToCartPage(){
+    window.location.href = "cart.html"
+  }
+
   //----------------addEventListener section-------------------//
   mov1.addEventListener("click", zeroSlide);
   mov2.addEventListener("click", firstSlide);
@@ -194,3 +204,5 @@
   fourth.addEventListener("click",goToLilPage);
   fifth.addEventListener("click",goToShoesBagsPage);
   sixth.addEventListener("click",goToAthleticzPage);
+  help.addEventListener("click",goToHelpPage);
+  cart0.addEventListener("click",goToCartPage)
