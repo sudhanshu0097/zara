@@ -127,6 +127,16 @@ function displayProduct(zaraData){
 
         div.append(img,h1,h3,h2)
         imageDiv.append(div)
-    })
+
+        
+        div.addEventListener("click",function(){
+            displaySingleProduct(item)
+        })
+
+    });
+
+    function displaySingleProduct(item){
+        localStorage.setItem("selectedProduct",JSON.stringify(item))
+       }
 
 }
