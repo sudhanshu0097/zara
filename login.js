@@ -23,7 +23,6 @@ var email = document.getElementById("email");
 var password = document.getElementById("password");
 var p = document.getElementById("notif")
 var form  = document.querySelector("form");
-var currentName = "LOGIN";
 
 
 //=============functionSelection====================//
@@ -99,14 +98,6 @@ function goToCartPage(){
          }
     }
 
-
-    for(var i = 0; i < zaraUserInfo.length; i++){
-        if(zaraUserInfo[i].userEmail == email.value){
-            currentName = zaraUserInfo[i].userName
-        }
-    }
-    localStorage.setItem("currentName",JSON.stringify(currentName))
-}
 
 
 

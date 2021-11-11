@@ -27,8 +27,6 @@ var b1 = document.getElementById("b1");
 var deleteAll = document.getElementById("deleteAll")
 var cart0 = document.getElementById("cart0");
 var help = document.getElementById("help");
-var zaraUserInfo = JSON.parse(localStorage.getItem("zaraUserInfo"))
-var currentName = JSON.parse(localStorage.getItem("currentName"))
 
 //=============functionSelection====================//
 
@@ -85,15 +83,6 @@ function goToCartPage(){
     console.log("hleo")
   }
 
-  
-  for(var i = 0; i < zaraUserInfo.length; i++){
-    if(zaraUserInfo[i].userName == currentName){
-      login.textContent = currentName
-      break;
-    }else{
-      login.textContent = "LOGIN"
-    }
-  }
 
 
 //=============eventsSelection====================//

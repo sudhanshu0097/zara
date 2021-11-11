@@ -34,8 +34,6 @@
   var search = document.getElementById("search")
   var help = document.getElementById("help");
   var cart0 = document.getElementById("cart0")
-  var zaraUserInfo = JSON.parse(localStorage.getItem("zaraUserInfo"))
-var currentName = JSON.parse(localStorage.getItem("currentName"))
   // var inside1 = document.querySelector(".inside1")
 
   //----------------- function section------------------ //
@@ -184,14 +182,6 @@ var currentName = JSON.parse(localStorage.getItem("currentName"))
     window.location.href = "cart.html"
   }
 
-  for(var i = 0; i < zaraUserInfo.length; i++){
-    if(zaraUserInfo[i].userName == currentName){
-      login.textContent = currentName
-      break;
-    }else{
-      login.textContent = "LOGIN"
-    }
-  }
 
   //----------------addEventListener section-------------------//
   mov1.addEventListener("click", zeroSlide);
