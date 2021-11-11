@@ -766,7 +766,7 @@ var dress=[
 		name:"DRAPED DRESS WITH RUFFLES",
 		desc:"V-NECK DRESS WITH LONG SLEEVES. DRAPED FABRIC DETAIL WITH RUFFLES. CONTRAST LINING. INVISIBLE SIDE ZIP FASTENING.",
 		price:"₹ 2,990.00",
-		color:"blue",
+		color:"black",
 	},
   {
 		image_url:"https://static.zara.net/photos///2021/I/0/1/p/9302/394/800/2/w/288/9302394800_1_1_1.jpg?ts=1635941056166",
@@ -780,7 +780,7 @@ var dress=[
 		name:"ASYMMETRIC MINI DRESS",
 		desc:"SHORT DRESS FEATURING AN ASYMMETRIC NECKLINE AND LONG SLEEVES WITH SHOULDER PADS. METALLIC THREAD DETAIL. FRONT SLIT AT THE HEM. INVISIBLE SIDE ZIP FASTENING.",
 		price:"₹ 4,590.00",
-		color:"black",
+		color:"blue",
 	},
 	{   
 		image_url:"https://static.zara.net/photos///2021/I/0/1/p/0387/204/312/2/w/288/0387204312_1_1_1.jpg?ts=1635934440496",
