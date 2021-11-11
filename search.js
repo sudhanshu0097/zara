@@ -83,6 +83,7 @@ function goToCartPage(){
     console.log("hleo")
   }
 
+  
 
 
 //=============eventsSelection====================//
@@ -97,11 +98,5 @@ fifth.addEventListener("click",goToShoesBagsPage);
 sixth.addEventListener("click",goToAthleticzPage);
 logo.addEventListener("click",goToHome);
 login.addEventListener("click",goToLogin);
-help.addEventListener("click",goToHelpPage)
-cart0.addEventListener("click",goToCartPage)
-// dress.addEventListener("click",showDressValue);
-// top.addEventListener("click",showTopValue);
-// jeans.addEventListener("click",showJeansValue);
-// blazer.addEventListener("click",showBlazerValue);
-// deleteAll.addEventListener("click",removingAll);
-// tops.addEventListener("click",showTopsValue)
+help.addEventListener("click",goToHelpPage);
+cart0.addEventListener("click",goToCartPage);
