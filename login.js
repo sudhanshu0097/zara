@@ -97,13 +97,9 @@ function goToCartPage(){
              window.location.href = "index.html"
          }
     }
-
-
-
-
+}
 
 //=============eventsSelection====================//
-
 tgl2.addEventListener("click",deactivation);
 // toggleBar.addEventListener("click",print);
 tglFwd.addEventListener("click",activation);
