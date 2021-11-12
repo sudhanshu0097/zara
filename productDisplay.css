@@ -381,28 +381,57 @@
     box-shadow: 1px 1px 1px 1px gray;
     display: none;
     margin-top : -100px;
-    font-size: 12px;
+    font-size: 13px;
   }
 
-  .filterDiv p{
+  .filterDiv > p{
     margin-left: 70%;
+    /* font-weight: 600; */
+    background-color: black;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
     /* letter-spacing: -1px; */
   }
 
-  .filterDiv >  ul > li:first-child{
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-
-  .filterDiv > ul li{
-    margin-bottom: 10px;
-  }
-
-  .filterDiv > ul > li:not(:first-child):hover{
-    background: rgba(0, 0, 255, 0.144);
+  .filterDiv > P:hover{
+    background-color: rgba(0, 0, 0, 0.233);
     padding: 5px;
+    color: white;
+  }
+
+  .filterDiv > div{
+    margin-top: 20%;
+  }
+
+  .filterDiv > div p{
+    margin-left: 10px;
+  }
+
+  .filterDiv ul li{
+    margin: 5px;
+    margin-left: 20px;
+    padding: 1px;
+    color: lightslategrey;
+    border-bottom: 1px solid rgba(112, 77, 77, 0.185);
+  }
+
+  #clrbar,#prbar{
+    font-weight: 600;
+    color: gray;
+  }
+
+  #smry{
+    margin-left: 20px;
+  }
+
+  .filterDiv ul li:hover{
+    background-color: rgba(0, 0, 0, 0.493);
+    color: white;
     border-radius: 5px;
   }
+
+
   
   #clrTag{
     color: rgb(226, 82, 106);
