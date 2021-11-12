@@ -92,6 +92,7 @@ first.addEventListener("click",goToWomenPage);
   cart0.addEventListener("click",goToCartPage)
   var cartBtn = document.getElementById("cartBtn");
   var cartBtn2 = document.getElementById("cartBtn2")
+  var cartBtn3 = document.getElementById("cartBtn3")
   var cartStore = JSON.parse(localStorage.getItem("cartStore")) || [];
 
 var selectedData = JSON.parse(localStorage.getItem("selectedProduct"))  
@@ -130,5 +131,11 @@ function hideDiv(){
   basketBar.style.display = "none"
 }
 
+function goToCartPage(){
+  window.location.href = "cart.html"
+}
+
 
 cartBtn.addEventListener("click",addItemsToCart);
+cartBtn3.addEventListener("click",goToCartPage)
+
