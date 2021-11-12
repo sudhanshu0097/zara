@@ -396,6 +396,7 @@
    position: fixed;
    top: 100px;
    right: 1px;
+   display: none;
    background-color: white;
    font-family: Georgia, 'Times New Roman', Times, serif;
 

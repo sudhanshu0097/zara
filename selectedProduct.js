@@ -91,6 +91,7 @@ first.addEventListener("click",goToWomenPage);
   help.addEventListener("click",goToHelpPage)
   cart0.addEventListener("click",goToCartPage)
   var cartBtn = document.getElementById("cartBtn");
+  var cartBtn2 = document.getElementById("cartBtn2")
   var cartStore = JSON.parse(localStorage.getItem("cartStore")) || [];
 
 var selectedData = JSON.parse(localStorage.getItem("selectedProduct"))  
@@ -100,11 +101,11 @@ var desc = document.getElementById("desc");
 var color = document.getElementById("color");
 var basketItemName = document.getElementById("basketItemName");
 var quantityPrice = document.getElementById("quantityPrice");
-var basketImg = document.getElementById("basketImg")
+var basketImg = document.getElementById("basketImg");
+var basketBar = document.getElementById("basketBar");
 
 var productImage = document.getElementById("productImage");
 
-var productImage = document.getElementById("productImage");
 
 price.textContent = selectedData.price;
 productName.textContent = selectedData.name;
@@ -121,8 +122,13 @@ function addItemsToCart(){
   cartStore.push(selectedData)
  localStorage.setItem("cartStore",JSON.stringify(cartStore))
  cartBtn2.style.display = "block"
+ basketBar.style.display = "block"
+ setTimeout("hideDiv()",2000)
 }
 
+function hideDiv(){
+  basketBar.style.display = "none"
+}
 
 
 cartBtn.addEventListener("click",addItemsToCart)
