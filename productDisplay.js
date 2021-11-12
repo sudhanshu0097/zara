@@ -31,6 +31,9 @@ var data = JSON.parse(localStorage.getItem("blazers"))
 var close = document.getElementById("close")
 var fltr = document.getElementById("fltr")
 var filterDiv = document.querySelector(".filterDiv")
+var cartcnt = document.getElementById("cartcnt")
+var cartItemCount = JSON.parse(localStorage.getItem("cartItemCount"))
+cartcnt.textContent = cartItemCount
 
 //=============functionSelection====================//
 

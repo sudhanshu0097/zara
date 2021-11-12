@@ -34,6 +34,9 @@
   var search = document.getElementById("search")
   var help = document.getElementById("help");
   var cart0 = document.getElementById("cart0")
+  var cartcnt = document.getElementById("cartcnt")
+  var cartItemCount = JSON.parse(localStorage.getItem("cartItemCount"))
+  cartcnt.textContent = cartItemCount
   // var inside1 = document.querySelector(".inside1")
 
   //----------------- function section------------------ //

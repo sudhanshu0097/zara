@@ -17,6 +17,10 @@ var sixth = document.getElementById("sixth");
 var login = document.getElementById("login")
 var cart0 = document.getElementById("cart0");
 var help = document.getElementById("help");
+var cartcnt = document.getElementById("cartcnt")
+var cartItemCount = JSON.parse(localStorage.getItem("cartItemCount"))
+cartcnt.textContent = cartItemCount
+
 
 //=============functionSelection====================//
 function activation(){
@@ -91,12 +95,17 @@ first.addEventListener("click",goToWomenPage);
   search.addEventListener("click",goToSearchPage);
   help.addEventListener("click",goToHelpPage);
   cart0.addEventListener("click",goToCartPage);
+  var totalPrice = document.getElementById("totalPrice")
 
   var cartStore = JSON.parse(localStorage.getItem("cartStore"))
 
   var cartImage = document.querySelector(".cartImage")
   console.log(cartImage)
- 
+
+  var cartTotalPrice = JSON.parse(localStorage.getItem("cartTotalPrice"))
+  totalPrice.textContent = cartTotalPrice
+
+
   displayCartProducts(cartStore);
 
   function displayCartProducts(cartStore){

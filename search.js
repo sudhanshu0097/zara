@@ -38,6 +38,9 @@ var d1 = document.getElementById("d1")
 var e1 = document.getElementById("e1")
 
 var del = document.getElementById("f")
+var cartcnt = document.getElementById("cartcnt")
+var cartItemCount = JSON.parse(localStorage.getItem("cartItemCount"))
+cartcnt.textContent = cartItemCount
 
 //=============functionSelection====================//
 

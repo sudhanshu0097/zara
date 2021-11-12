@@ -17,6 +17,9 @@ var sixth = document.getElementById("sixth");
 var login = document.getElementById("login")
 var cart0 = document.getElementById("cart0");
 var help = document.getElementById("help");
+var cartcnt = document.getElementById("cartcnt")
+var cartItemCount = JSON.parse(localStorage.getItem("cartItemCount"))
+cartcnt.textContent = cartItemCount
 //=============functionSelection====================//
 function activation(){
     toggleBar.style.display = "block";

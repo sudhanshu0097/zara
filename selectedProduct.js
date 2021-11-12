@@ -17,6 +17,8 @@ var sixth = document.getElementById("sixth");
 var login = document.getElementById("login")
 var cart0 = document.getElementById("cart0");
 var help = document.getElementById("help");
+var cartcnt = document.getElementById("cartcnt")
+cartcnt.textContent = cartItemCount
 
 //=============functionSelection====================//
 function activation(){
@@ -94,6 +96,8 @@ first.addEventListener("click",goToWomenPage);
   var cartBtn2 = document.getElementById("cartBtn2")
   var cartBtn3 = document.getElementById("cartBtn3")
   var cartStore = JSON.parse(localStorage.getItem("cartStore")) || [];
+  var cartTotalPrice = JSON.parse(localStorage.getItem("cartTotalPrice")) || 0;
+  var cartItemCount = JSON.parse(localStorage.getItem("cartItemCount")) || 0;
 
 var selectedData = JSON.parse(localStorage.getItem("selectedProduct"))  
 var price = document.getElementById("price");
@@ -120,7 +124,11 @@ basketImg.setAttribute("src",selectedData.image_url)
 
 
 function addItemsToCart(){
+  cartItemCount++
   cartStore.push(selectedData)
+  cartTotalPrice += selectedData.price
+  localStorage.setItem("cartItemCount",JSON.stringify(cartItemCount))
+  localStorage.setItem("cartTotalPrice",JSON.stringify(cartTotalPrice))
  localStorage.setItem("cartStore",JSON.stringify(cartStore))
  cartBtn2.style.display = "block"
  basketBar.style.display = "block"
