@@ -28,6 +28,9 @@ var deleteAll = document.getElementById("deleteAll")
 var cart0 = document.getElementById("cart0");
 var help = document.getElementById("help");
 var data = JSON.parse(localStorage.getItem("blazers"))
+var close = document.getElementById("close")
+var fltr = document.getElementById("fltr")
+var filterDiv = document.querySelector(".filterDiv")
 
 //=============functionSelection====================//
 
@@ -84,7 +87,13 @@ function goToCartPage(){
     console.log("hleo")
   }
 
-
+  function openFilterPage(){
+    filterDiv.style.display = "block"
+      }
+    
+    function closeFilterPage(){
+        filterDiv.style.display = "none"
+    }
 
 //=============eventsSelection====================//
 
@@ -100,6 +109,8 @@ logo.addEventListener("click",goToHome);
 login.addEventListener("click",goToLogin);
 help.addEventListener("click",goToHelpPage);
 cart0.addEventListener("click",goToCartPage);
+fltr.addEventListener("click",openFilterPage)
+close.addEventListener("click",closeFilterPage)
 
 
 
