@@ -117,13 +117,41 @@ close.addEventListener("click",closeFilterPage)
 //============================= Now product displaying of this page ============================= //
 
 var zaraData = JSON.parse(localStorage.getItem("zaraProductData"));
+var results = document.getElementById("results");
+
+//====================== sorting section========================= //
+var blue = document.getElementById("blue")
+var black = document.getElementById("black")
+var brown = document.getElementById("brown")
+var pink = document.getElementById("pink")
+var red = document.getElementById("red")
+var white = document.getElementById("white")
+var green = document.getElementById("green")
+var yellow = document.getElementById("yellow")
+var purple = document.getElementById("purple")
+var red = document.getElementById("red")
+var gray = document.getElementById("gray")
+var green = document.getElementById("green")
+
+
+
+function sortByBlue(zaraData){
+    var sortedItems = zaraData.filter(function(item){
+        return item.color == blue.textContent
+    })
+    displayProduct(sortedItems)
+  }
+
+
+
 
 
 displayProduct(zaraData);
-
-
 function displayProduct(zaraData){
+    imageDiv.textContent = "";
+    var count = 0;
     zaraData.map(function(item){
+        count++
         var div = document.createElement("div")
         div.setAttribute("id","clothesDiv")
          var h1 = document.createElement("h2");
@@ -156,8 +184,16 @@ function displayProduct(zaraData){
 
     });
 
+    blue.addEventListener("click",function(){
+        sortByBlue(zaraData)
+    })
+
+
+
+
     function displaySingleProduct(item){
         localStorage.setItem("selectedProduct",JSON.stringify(item))
         window.location.href = "selectedProduct.html"
        }
+       results.textContent = count
 }

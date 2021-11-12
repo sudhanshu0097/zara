@@ -422,7 +422,7 @@
   }
 
   #smry{
-    margin-left: 20px;
+    margin-left: 18px;
   }
 
   .filterDiv ul li:hover{
@@ -442,6 +442,11 @@
   #clrCode{
     color: rgb(97, 70, 70);
     text-transform: capitalize;
+  }
+  #smry{
+    color: blue;
+    font-weight: 500;
+    text-decoration: underline;
   }
 
   
