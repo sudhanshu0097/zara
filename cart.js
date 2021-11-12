@@ -94,3 +94,45 @@ first.addEventListener("click",goToWomenPage);
 
   var cartStore = JSON.parse(localStorage.getItem("cartStore"))
 
+  var cartImage = document.querySelector(".cartImage")
+  console.log(cartImage)
+ 
+  displayCartProducts(cartStore);
+
+  function displayCartProducts(cartStore){
+      cartStore.map(function(item){
+          console.log(item)
+        var cartInnerDivs = document.createElement("div");
+        cartInnerDivs.setAttribute("id","cartInnerDiv");
+
+        var eleName = document.createElement("h2");
+        var elePrice = document.createElement("span");
+        var eleColor = document.createElement("span");
+        var eleImg = document.createElement("img");
+        var clrSpan = document.createElement("div");
+        var priceSpan = document.createElement("div");
+
+        clrSpan.textContent = "Color :-"
+        priceSpan.textContent = "₹ "
+
+        eleName.setAttribute("id","eleName")
+        elePrice.setAttribute("id","elePrice")
+        eleColor.setAttribute("id","eleColor")
+
+        eleImg.setAttribute("id","eleImg")
+
+
+
+        eleName.textContent = item.name;
+        elePrice.textContent = item.price;
+        eleColor.textContent = item.color;
+        eleImg.src = item.image_url;
+
+        clrSpan.append(eleColor)
+        priceSpan.append(elePrice)
+        cartInnerDivs.append(eleImg,eleName,priceSpan,clrSpan)
+
+        cartImage.append(cartInnerDivs)
+
+      })
+  }

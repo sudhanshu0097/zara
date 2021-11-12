@@ -135,8 +135,8 @@
   .section-box {
     display: flex;
     overflow: hidden;
-    width: 100%;
-    height: 572px;
+    /* width: 100%; */
+    /* height: 572px; */
     /* border: 1px solid red; */
     position: relative;
     /* margin-top: 10px; */
@@ -156,7 +156,7 @@
   }
   .imageDiv {
     /* border: 1px solid black; */
-    height: 90%;
+    /* height: 90%; */
   }
   footer {
     /* border: 1px solid black; */
@@ -289,12 +289,98 @@
     font-size: 13px;
   }
   
+  .cartImage{
+    display: flex;
+    /* border: 1px solid blue; */
+    justify-content: center;
+    gap: 10px;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* overflow: scroll; */
+    margin: 30px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    flex-wrap: wrap;
+  }
+
+  #cartInnerDiv{
+    width: 200px;
+    height: 350px;
+    /* border: 1px solid black; */
+  }
+
+  #eleImg{
+    width: 100%;
+    height: 70%;
+    object-fit: contain;
+  }
+
+  #eleName{
+    font-size: 12px;
+
+  }
+
+  #elePrice{
+    font-size: 13px;
+    color: teal;
+  }
+
+  #eleColor{
+    color: black;
+    font-size: 12px;
+    color: gray;
+  }
+
+  #totalContainer{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+
+  }
+
+  #totalContainer > div{
+    float: right;
+    width: 380px;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+  }
+  #totalContainer p{
+    font-size: 12px;
+  }
+
+  #continue{
+    width: 200px;
+    padding: 7px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #continue:hover{
+    background-color: rgba(0, 0, 0, 0.26);
+  }
+   
   
   
+  #totalContainer > div >div >p:nth-child(1){
+    color: #a50028;
+    font-weight: 500;
+  }
   
   
-  
-  
+  #totalContainer > div >div >p:not(:first-child){
+    color: teal;
+    font-size: 11px;
+    font-weight: 500;
+  }
   
   
   
