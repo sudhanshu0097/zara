@@ -96,4 +96,6 @@ first.addEventListener("click",goToWomenPage);
   help.addEventListener("click",goToHelpPage);
   cart0.addEventListener("click",goToCartPage);
 
-
+  var totalPrice = document.getElementById("totalPrice")
+  var cartTotalPrice = JSON.parse(localStorage.getItem("cartTotalPrice"))
+  totalPrice.textContent = cartTotalPrice
