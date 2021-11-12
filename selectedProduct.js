@@ -98,6 +98,11 @@ var price = document.getElementById("price");
 var productName = document.getElementById("productName");
 var desc = document.getElementById("desc");
 var color = document.getElementById("color");
+var basketItemName = document.getElementById("basketItemName");
+var quantityPrice = document.getElementById("quantityPrice");
+var basketImg = document.getElementById("basketImg")
+
+var productImage = document.getElementById("productImage");
 
 var productImage = document.getElementById("productImage");
 
@@ -106,6 +111,10 @@ productName.textContent = selectedData.name;
 desc.textContent = selectedData.desc;
 color.textContent = selectedData.color;
 productImage.src = selectedData.image_url;
+
+basketItemName.textContent = selectedData.name
+quantityPrice.textContent = selectedData.price
+basketImg.setAttribute("src",selectedData.image_url)
 
 
 function addItemsToCart(){
