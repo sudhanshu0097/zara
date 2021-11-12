@@ -90,6 +90,8 @@ first.addEventListener("click",goToWomenPage);
   search.addEventListener("click",goToSearchPage)
   help.addEventListener("click",goToHelpPage)
   cart0.addEventListener("click",goToCartPage)
+  var cartBtn = document.getElementById("cartBtn");
+  var cartStore = JSON.parse(localStorage.getItem("cartStore")) || [];
 
 var selectedData = JSON.parse(localStorage.getItem("selectedProduct"))  
 var price = document.getElementById("price");
@@ -104,3 +106,13 @@ productName.textContent = selectedData.name;
 desc.textContent = selectedData.desc;
 color.textContent = selectedData.color;
 productImage.src = selectedData.image_url;
+
+
+function addItemsToCart(){
+  cartStore.push(selectedData)
+ localStorage.setItem("cartStore",JSON.stringify(cartStore))
+}
+
+
+
+cartBtn.addEventListener("click",addItemsToCart)
