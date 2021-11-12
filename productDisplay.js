@@ -131,6 +131,51 @@ var yellow = document.getElementById("yellow")
 var purple = document.getElementById("purple")
 var gray = document.getElementById("gray")
 var ecru = document.getElementById("ecru")
+displayProduct(zaraData)
+
+blue.addEventListener("click",function(){
+    sortByBlue(zaraData)
+})
+
+black.addEventListener("click",function(){
+    sortByBlack(zaraData)
+})
+
+brown.addEventListener("click",function(){
+    sortByBrown(zaraData)
+})
+
+pink.addEventListener("click",function(){
+    sortByPink(zaraData)
+})
+
+red.addEventListener("click",function(){
+    sortByRed(zaraData)
+})
+
+white.addEventListener("click",function(){
+    sortByWhite(zaraData)
+})
+
+green.addEventListener("click",function(){
+    sortByGreen(zaraData)
+})
+
+yellow.addEventListener("click",function(){
+    sortByYellow(zaraData)
+})
+
+purple.addEventListener("click",function(){
+    sortByPurple(zaraData)
+})
+
+gray.addEventListener("click",function(){
+    sortByGray(zaraData)
+})
+
+ecru.addEventListener("click",function(){
+    sortByEcru(zaraData)
+})
 
 
 
@@ -140,6 +185,76 @@ function sortByBlue(zaraData){
     })
     displayProduct(sortedItems)
   }
+
+  function sortByBlack(zaraData){
+      var sortedItems = zaraData.filter(function(item){
+          return item.color == black.textContent
+      })
+      displayProduct(sortedItems)
+  }
+
+  function sortByBrown(zaraData){
+    var sortedItems = zaraData.filter(function(item){
+        return item.color == brown.textContent
+    })
+    displayProduct(sortedItems)
+}
+
+function sortByPink(zaraData){
+    var sortedItems = zaraData.filter(function(item){
+        return item.color == pink.textContent
+    })
+    displayProduct(sortedItems)
+}
+
+function sortByRed(zaraData){
+    var sortedItems = zaraData.filter(function(item){
+        return item.color == red.textContent
+    })
+    displayProduct(sortedItems)
+}
+
+function sortByWhite(zaraData){
+    var sortedItems = zaraData.filter(function(item){
+        return item.color == white.textContent
+    })
+    displayProduct(sortedItems)
+}
+
+function sortByGreen(zaraData){
+    var sortedItems = zaraData.filter(function(item){
+        return item.color == green.textContent
+    })
+    displayProduct(sortedItems)
+}
+
+function sortByYellow(zaraData){
+    var sortedItems = zaraData.filter(function(item){
+        return item.color == yellow.textContent
+    })
+    displayProduct(sortedItems)
+}
+
+function sortByPurple(zaraData){
+    var sortedItems = zaraData.filter(function(item){
+        return item.color == purple.textContent
+    })
+    displayProduct(sortedItems)
+}
+
+function sortByGray(zaraData){
+    var sortedItems = zaraData.filter(function(item){
+        return item.color == gray.textContent
+    })
+    displayProduct(sortedItems)
+}
+
+function sortByEcru(zaraData){
+    var sortedItems = zaraData.filter(function(item){
+        return item.color == ecru.textContent
+    })
+    displayProduct(sortedItems)
+}
 
 
 
@@ -182,10 +297,6 @@ function displayProduct(zaraData){
         })
 
     });
-
-    blue.addEventListener("click",function(){
-        sortByBlue(zaraData)
-    })
 
 
 
