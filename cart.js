@@ -87,7 +87,10 @@ first.addEventListener("click",goToWomenPage);
   fifth.addEventListener("click",goToShoesBagsPage);
   sixth.addEventListener("click",goToAthleticzPage);
   login.addEventListener("click",goToLoginPage);
-  logo.addEventListener("click",goToHomePage)
-  search.addEventListener("click",goToSearchPage)
-  help.addEventListener("click",goToHelpPage)
-  cart0.addEventListener("click",goToCartPage)
+  logo.addEventListener("click",goToHomePage);
+  search.addEventListener("click",goToSearchPage);
+  help.addEventListener("click",goToHelpPage);
+  cart0.addEventListener("click",goToCartPage);
+
+  var cartStore = JSON.parse(localStorage.getItem("cartStore"))
+

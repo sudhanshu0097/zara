@@ -131,4 +131,4 @@ function hideDiv(){
 }
 
 
-cartBtn.addEventListener("click",addItemsToCart)
+cartBtn.addEventListener("click",addItemsToCart);
