@@ -137,5 +137,5 @@ function goToCartPage(){
 
 
 cartBtn.addEventListener("click",addItemsToCart);
-cartBtn3.addEventListener("click",goToCartPage)
+cartBtn3.addEventListener("click",goToCartPage);
 
