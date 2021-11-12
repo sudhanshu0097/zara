@@ -128,15 +128,20 @@ function displayProduct(zaraData){
         div.setAttribute("id","clothesDiv")
          var h1 = document.createElement("h2");
          var img = document.createElement("img");
-         var h2 = document.createElement("h3")
+         var h2 = document.createElement("span")
          var h3 = document.createElement("h4")
+         var symbol = document.createElement("span")
+         symbol.setAttribute("id","rupee")
+         h2.setAttribute("id","priceTag")
 
         h1.textContent = item.name;
         h2.textContent = item.price;
         h3.textContent = item.color;
         img.setAttribute("src",item.image_url);
+        symbol.textContent = "₹ "
 
-        div.append(img,h1,h3,h2)
+        symbol.append(h2)
+        div.append(img,h1,h3,symbol)
         imageDiv.append(div)
 
         

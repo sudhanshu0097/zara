@@ -364,7 +364,15 @@
   #cartBtn:hover{
     background-color: rgba(0, 0, 0, 0.356);
   }
-  
+
+  #rupee{
+    color: gray;
+    font-weight: 600;
+  }
+
+  #price{
+    color: brown;
+  }
   
   
   

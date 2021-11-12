@@ -335,6 +335,16 @@
     width: 250px;
   }
 
+  #priceTag{
+    color: #a50028;
+    font-weight: 600;
+  }
+
+  #rupee{
+    font-weight: 500;
+    color: gray;
+  }
+
   .keywords{
     /* border: 1px solid black; */
     width: 90%;
