@@ -111,6 +111,7 @@ productImage.src = selectedData.image_url;
 function addItemsToCart(){
   cartStore.push(selectedData)
  localStorage.setItem("cartStore",JSON.stringify(cartStore))
+ cartBtn2.style.display = "block"
 }
 
 

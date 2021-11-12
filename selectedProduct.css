@@ -351,7 +351,7 @@
     margin-top: 10px;
   }
 
-  #cartBtn{
+  #cartBtn,#cartBtn2,#cartBtn3{
     width: 100%;
     padding: 5px;
     margin-top: 10px;
@@ -361,7 +361,7 @@
     border: none;
   }
   
-  #cartBtn:hover{
+  #cartBtn:hover,#cartBtn2:hover,#cartBtn3:hover{
     background-color: rgba(0, 0, 0, 0.356);
   }
 
@@ -373,6 +373,7 @@
   #price{
     color: brown;
   }
+
   
   #clr{
     color: cornflowerblue;
@@ -384,7 +385,77 @@
     font-weight: 700;
   }
   
+  #cartBtn2{
+    display: none;
+  }
   
+  #basketBar{
+    /* border: 1px solid green; */
+    width: 19%;
+    height: 80%;
+   position: fixed;
+   top: 100px;
+   right: 1px;
+   background-color: white;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+
+  }
+
+  
+  #leftbask{
+    width: 100%;
+    /* border: 1px solid gray; */
+    padding: 5px;
+  }
+
+  #rightbask{
+    width: 65%;
+    padding: 3px;
+  }
+
+  #basketBar img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  #parentDiv{
+    display: flex;
+  }
+
+  #basketBar h2{
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+
+  #basketBar p{
+    font-size: 10px;
+    font-weight: 700;
+    color: brown;
+    margin-bottom: 10px;
+
+  }
+
+
+
+#basketBar > p{
+  color: rgba(0, 128, 128, 0.61);
+  text-align: center;
+}
+
+#cartBtn3{
+  width: 80%;
+  margin-left: 20px;
+  position: absolute;
+  bottom: 25px;
+}
+  
+
+#alert{
+  text-decoration: underline;
+}
   
   
   
