@@ -129,9 +129,8 @@ var white = document.getElementById("white")
 var green = document.getElementById("green")
 var yellow = document.getElementById("yellow")
 var purple = document.getElementById("purple")
-var red = document.getElementById("red")
 var gray = document.getElementById("gray")
-var green = document.getElementById("green")
+var ecru = document.getElementById("ecru")
 
 
 
