@@ -411,7 +411,7 @@
   .filterDiv ul li{
     margin: 5px;
     margin-left: 20px;
-    padding: 1px;
+    padding: 2px;
     color: lightslategrey;
     border-bottom: 1px solid rgba(112, 77, 77, 0.185);
   }
@@ -428,6 +428,8 @@
   .filterDiv ul li:hover{
     background-color: rgba(0, 0, 0, 0.493);
     color: white;
+    color: black;
+    font-weight: 500;
     border-radius: 5px;
   }
 
@@ -448,6 +450,11 @@
     font-weight: 500;
     text-decoration: underline;
   }
+
+  #split{
+    border: 1px solid rgba(165, 42, 42, 0.397);
+  }
+
 
   
   
