@@ -131,7 +131,18 @@ var yellow = document.getElementById("yellow")
 var purple = document.getElementById("purple")
 var gray = document.getElementById("gray")
 var ecru = document.getElementById("ecru")
+var low = document.getElementById("low");
+var high = document.getElementById("high");
 displayProduct(zaraData)
+
+low.addEventListener("click",function(){
+    sortByLowPrice(zaraData)
+})
+
+high.addEventListener("click",function(){
+    sortByHighPrice(zaraData)
+})
+
 
 blue.addEventListener("click",function(){
     sortByBlue(zaraData)
@@ -256,7 +267,26 @@ function sortByEcru(zaraData){
     displayProduct(sortedItems)
 }
 
+function sortByLowPrice(zaraData){
+    if(low.textContent == "low to high"){
+        zaraData.sort(function(a,b){
+            return a.price - b.price
+        })
+    }
+    displayProduct(zaraData)
 
+}
+
+
+function sortByHighPrice(zaraData){
+    if(high.textContent == "high to low"){
+        zaraData.sort(function(a,b){
+            return b.price - a.price
+        })
+    }
+    displayProduct(zaraData)
+
+}
 
 
 
