@@ -358,14 +358,14 @@ var jeans = [
       name : "Z1975 MOM JEANS",
       desc : "FADED HIGH-WAIST JEANS FEATURING A FIVE-POCKET DESIGN AND ZIP FLY AND METAL TOP BUTTON FASTENING.",
       price : 2790.00,
-      color : "darkgray",
+      color : "white",
   },
   {
       image_url : "https://static.zara.net/photos///2021/I/0/1/p/6164/228/427/2/w/750/6164228427_2_1_1.jpg?ts=1633078881318",
       name : "Z1975 HIGH-RISE STRAIGHT JEANS",
       desc : "FADED HIGH-WAIST JEANS WITH A FIVE-POCKET DESIGN AND STRAIGHT-LEG DESIGN. SEAMLESS HEMS. FASTENS AT THE FRONT WITH METAL BUTTONS.",
       price : 2990.00,
-      color : "cadetblue",
+      color : "blue",
   },
   {
       image_url : "https://static.zara.net/photos///2021/I/0/1/p/6164/199/800/2/w/750/6164199800_2_1_1.jpg?ts=1629896977723",
@@ -386,14 +386,14 @@ var jeans = [
       name : "Z1975 HIGH RISE SLIM FLARE JEANS",
       desc : "FADED HIGH-WAISTED JEANS WITH A FIVE-POCKET DESIGN. SEAMLESS HEMS WITH SIDE VENT. ZIP FLY AND METAL BUTTON FASTENING.",
       price : 2790.00,
-      color : "dimgray",
+      color : "black",
   },
   {
       image_url : "https://static.zara.net/photos///2021/I/0/1/p/6164/170/427/2/w/750/6164170427_1_1_1.jpg?ts=1634294292927",
       name : "Z1975 HIGH RISE SLIM FLARE JEANS",
       desc : "FADED HIGH-WAISTED JEANS WITH A FIVE-POCKET DESIGN. SEAMLESS HEMS WITH SIDE VENT. ZIP FLY AND METAL BUTTON FASTENING.",
       price : 2790.00,
-      color : "cornflowerblue",
+      color : "blue",
   },
 
   {
@@ -401,42 +401,42 @@ var jeans = [
       name : "HIGH-RISE STRAIGHT JEANS",
       desc : "HIGH-RISE JEANS MADE OF RIGID FABRIC WITH FIVE POCKETS. FRONT FASTENING WITH METAL BUTTONS.",
       price : 2790.00,
-      color : "darkslateblue",
+      color : "blue",
   },
   {
       image_url : "https://static.zara.net/photos//mkt/misc/watermarks/joinlife-ss19-v2/joinlife-large.svg?ts=1587055628000",
       name : "HIGH-RISE STRAIGHT JEANS",
       desc : "HIGH-RISE JEANS MADE OF RIGID FABRIC WITH FIVE POCKETS. FRONT FASTENING WITH METAL BUTTONS.",
       price: 2790.00,
-      color : "lightsteelblue",
+      color : "white",
   },
   {
       image_url : "https://static.zara.net/photos///2021/I/0/1/p/6164/170/406/4/w/750/6164170406_2_3_1.jpg?ts=1632745792401",
       name : "Z1975 HIGH RISE SLIM FLARE JEANS",
       desc : "FADED HIGH-WAISTED JEANS WITH A FIVE-POCKET DESIGN. SEAMLESS HEMS WITH SIDE VENT. ZIP FLY AND METAL BUTTON FASTENING.",
       price : 2790.00,
-      color : "steelblue",
+      color : "blue",
   },
   {
       image_url : "https://static.zara.net/photos///2021/I/0/1/p/4341/731/600/2/w/750/4341731600_2_2_1.jpg?ts=1635854834656",
       name : "STRAIGHT FIT JEANS",
       desc : "MID-RISE JEANS IN RIGID FABRIC WITH A FIVE-POCKET DESIGN. ZIP FLY AND METAL TOP BUTTON FASTENING AT THE FRONT.",
       price : 2990.00,
-      color : "darkslategray",
+      color : "blue",
   },
   {
       image_url : "https://static.zara.net/photos///2021/I/0/1/p/6045/228/462/2/w/750/6045228462_2_4_1.jpg?ts=1626175225088",
       name : "WIDE-LEG JEANS",
       desc : "HIGH-WAIST RIGID JEANS WITH FIVE POCKETS. EXTRA LONG WIDE LEG. ZIP FLY AND METAL BUTTON FASTENING.",
       price : 2990.00,
-      color : "darkslategray",
+      color : "blue",
   },
   {
       image_url : "https://static.zara.net/photos///2021/I/0/1/p/6688/224/401/2/w/750/6688224401_2_3_1.jpg?ts=1626175255852",
       name : "WIDE-LEG JEANS",
       desc : "HIGH-WAIST RIGID JEANS WITH FIVE POCKETS. EXTRA LONG WIDE LEG. ZIP FLY AND METAL BUTTON FASTENING.",
       price : 2990.00,
-      color : "navy blue",
+      color : "blue",
   },
   {
       image_url : "https://static.zara.net/photos///2021/I/0/1/p/2553/245/400/2/w/750/2553245400_6_1_1.jpg?ts=1623399158239",
@@ -506,7 +506,7 @@ var jeans = [
       name : "SLIM FIT HIGH-RISE JEANS WITH RIPPED DETAILS",
       desc : "FADED HIGH-WAIST JEANS IN SLIGHTLY STRETCHY FABRIC FOR ADDED COMFORT. FEATURING FIVE POCKETS AND RIPPED DETAIL. ZIP FLY AND METAL TOP BUTTON",
       price : 2790.00,
-      color : "light grey",
+      color : "black",
   },
   {
       image_url : "https://static.zara.net/photos///2021/I/0/1/p/2553/250/400/2/w/750/2553250400_2_4_1.jpg?ts=1630585897081",
@@ -692,7 +692,7 @@ var tops = [
     name: "CROPPED CORSETRY-INSPIRED TOP",
     desc: "CROP TOP WITH A SWEETHEART NECKLINE, ADJUSTABLE THIN STRAPS AND INVISIBLE SIDE ZIP FASTENING.",
     price: 1990.00,
-    color: "fuchsia",
+    color: "pink",
   },
   {
     image_url:
@@ -708,7 +708,7 @@ var tops = [
     name: "FLORAL PRINT TOP",
     desc: "CROP TOP FEATURING A V-NECKLINE WITH KNOT DETAIL AND SLEEVES FALLING BELOW THE ELBOW. GATHERED HEM. INVISIBLE SIDE ZIP FASTENING.",
     price: 2790.00,
-    color: "multicoloured",
+    color: "blue",
   },
   {
     image_url:
@@ -716,7 +716,7 @@ var tops = [
     name: "FLORAL PRINT HALTERNECK TOP",
     desc: "HALTER NECK TOP. GATHERING AT THE HEM. OPENING AT THE BACK WITH TIE DETAIL.",
     price: 2790.00,
-    color: "multicoloured",
+    color: "blue",
   },
   {
     image_url:
