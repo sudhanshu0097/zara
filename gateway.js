@@ -20,7 +20,8 @@ var help = document.getElementById("help");
 var cartcnt = document.getElementById("cartcnt")
 var cartItemCount = JSON.parse(localStorage.getItem("cartItemCount"))
 cartcnt.textContent = cartItemCount
-var conti = document.getElementById("continue")
+// var conti = document.getElementById("continue")
+
 
 //=============functionSelection====================//
 function activation(){
@@ -78,10 +79,6 @@ function goToCartPage(){
     console.log("hleo")
   }
 
-  function goTogatewayPage(){
-      window.location.href = "gateway.html"
-  }
-
 
 //=============eventsSelection====================//
 
@@ -99,7 +96,6 @@ first.addEventListener("click",goToWomenPage);
   search.addEventListener("click",goToSearchPage);
   help.addEventListener("click",goToHelpPage);
   cart0.addEventListener("click",goToCartPage);
-  conti.addEventListener("click",goTogatewayPage)
 
   var totalPrice = document.getElementById("totalPrice")
   var cartTotalPrice = JSON.parse(localStorage.getItem("cartTotalPrice"))
