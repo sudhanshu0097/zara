@@ -404,6 +404,17 @@
     border-radius: 5px;
   }
   
+  #clrTag{
+    color: rgb(226, 82, 106);
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  #clrCode{
+    color: rgb(97, 70, 70);
+    text-transform: capitalize;
+  }
+
   
   
   

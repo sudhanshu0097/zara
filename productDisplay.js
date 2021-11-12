@@ -129,19 +129,24 @@ function displayProduct(zaraData){
          var h1 = document.createElement("h2");
          var img = document.createElement("img");
          var h2 = document.createElement("span")
-         var h3 = document.createElement("h4")
+         var h3 = document.createElement("span")
          var symbol = document.createElement("span")
          symbol.setAttribute("id","rupee")
          h2.setAttribute("id","priceTag")
+         var clrTag = document.createElement("div");
+         clrTag.setAttribute("id","clrTag")
+         h3.setAttribute("id","clrCode")
 
         h1.textContent = item.name;
         h2.textContent = item.price;
         h3.textContent = item.color;
         img.setAttribute("src",item.image_url);
         symbol.textContent = "₹ "
+        clrTag.textContent = "Color :- "
 
         symbol.append(h2)
-        div.append(img,h1,h3,symbol)
+        clrTag.append(h3)
+        div.append(img,h1,clrTag,symbol)
         imageDiv.append(div)
 
         
