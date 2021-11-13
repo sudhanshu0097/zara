@@ -23,6 +23,9 @@ cartcnt.textContent = cartItemCount
 var enterOtp = document.getElementById("enterOtp")
 var helpContainer = document.querySelector(".helpContainer")
 var ticketContainer = document.querySelector(".tickContainer")
+var label = document.getElementById("label")
+
+var checkicon = document.querySelector(".check-icon")
 //=============functionSelection====================//
 function activation(){
     toggleBar.style.display = "block";
@@ -83,8 +86,16 @@ function goToCartPage(){
   function openOtp(){
 helpContainer.style.display = "none"
 ticketContainer.style.display = "block"
-
+setTimeout("showTick()",2000)
   }
+
+  function showTick(){
+    checkicon.style.display = "block"
+    label.style.animation = "none"
+    label.style.borderColor = "black"
+  }
+
+  
 
 //=============eventsSelection====================//
 

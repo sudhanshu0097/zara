@@ -362,10 +362,27 @@
       top: 50%;
       left: 25px;
       transform-origin: left top;
+      animation: check-icon 0.8s ease;
   }
 
+  @keyframes check-icon {
+      0%{
+          height: 0;
+          width: 0;
+          opacity: 1;
+      }
+      20%{
+        height: 45px;
+        width: 20px;
+        opacity: 1;
+    }
+    0%{
+        height: 45px;
+        width: 20px;
+        opacity: 1;
+    }
+  }
   
-
 
  
 
