@@ -146,6 +146,7 @@ function goToCartPage(){
 
 function goToPaymentPage(){
   window.location.href = "payment.html"
+  console.log("hlo")
 }
 
 cartBtn.addEventListener("click",addItemsToCart);
