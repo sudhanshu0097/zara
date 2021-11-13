@@ -200,6 +200,8 @@
   }
 
 
+
+
   //----------------addEventListener section-------------------//
   mov1.addEventListener("click", zeroSlide);
   mov2.addEventListener("click", firstSlide);
