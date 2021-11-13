@@ -33,6 +33,7 @@ function activation(){
     toggleBar.style.display = "block";
     toggleBar2.style.display = "block"
     tglFwd.style.display = "none";
+    console.log("hlo")
 }
 
 function deactivation(){
