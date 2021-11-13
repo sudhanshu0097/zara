@@ -110,7 +110,7 @@ first.addEventListener("click",goToWomenPage);
   console.log(cartImage)
 
   var cartTotalPrice = JSON.parse(localStorage.getItem("cartTotalPrice"))
-  totalPrice.textContent = cartTotalPrice
+  
 
 
   displayCartProducts(cartStore);
@@ -135,6 +135,7 @@ first.addEventListener("click",goToWomenPage);
         delbtn.innerHTML = `<span class="material-icons-outlined">
         delete_outline
         </span>`
+        totalPrice.textContent = cartTotalPrice
 
         eleName.setAttribute("id","eleName")
         elePrice.setAttribute("id","elePrice")
@@ -175,5 +176,6 @@ console.log(index)
 localStorage.setItem("cartStore",JSON.stringify
 (cartStore))
 displayCartProducts(cartStore)
+window.location.href = "cart.html"
 // localStorage.setItem
   }
