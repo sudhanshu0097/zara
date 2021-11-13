@@ -362,4 +362,7 @@ function displayProduct(zaraData){
         window.location.href = "selectedProduct.html"
        }
        results.textContent = count
+
+
+       
 }
