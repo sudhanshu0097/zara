@@ -910,6 +910,8 @@ var dress=[
 	},
 ];
 
+
+
 localStorage.setItem("zaraProductData",JSON.stringify(blazers));
 
 function showB(){

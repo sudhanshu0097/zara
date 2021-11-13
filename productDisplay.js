@@ -34,6 +34,7 @@ var filterDiv = document.querySelector(".filterDiv")
 var cartcnt = document.getElementById("cartcnt")
 var cartItemCount = JSON.parse(localStorage.getItem("cartItemCount"))
 cartcnt.textContent = cartItemCount
+var fullSearch = document.getElementById("fullSearch")
 
 //=============functionSelection====================//
 
