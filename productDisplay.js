@@ -293,7 +293,7 @@ function sortByLowPrice(zaraData){
             return a.price - b.price
         })
     }
-    displayProduct(zaraData)
+     displayProduct(zaraData)
 
 }
 
