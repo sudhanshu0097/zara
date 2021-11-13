@@ -26,6 +26,8 @@ var ticketContainer = document.querySelector(".tickContainer")
 var label = document.getElementById("label")
 
 var checkicon = document.querySelector(".check-icon")
+var gotohome = document.getElementById("goToHome")
+var cnfrm = document.getElementById("cnfrm")
 //=============functionSelection====================//
 function activation(){
     toggleBar.style.display = "block";
@@ -93,7 +95,12 @@ setTimeout("showTick()",2000)
     checkicon.style.display = "block"
     label.style.animation = "none"
     label.style.borderColor = "black"
+    label.style.transition = "border 0.5s ease-out"
+    gotohome.style.display = "block"
+    cnfrm.style.display = "block"
   }
+
+
 
   
 
@@ -114,3 +121,4 @@ first.addEventListener("click",goToWomenPage);
   help.addEventListener("click",goToHelpPage)
   cart0.addEventListener("click",goToCartPage)
   enterOtp.addEventListener("click",openOtp)
+  gotohome.addEventListener("click",goToHomePage)
