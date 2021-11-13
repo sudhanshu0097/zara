@@ -41,6 +41,7 @@ var del = document.getElementById("f")
 var cartcnt = document.getElementById("cartcnt")
 var cartItemCount = JSON.parse(localStorage.getItem("cartItemCount"))
 cartcnt.textContent = cartItemCount
+var fullSearch = document.getElementById("fullSearch")
 
 //=============functionSelection====================//
 
@@ -138,6 +139,18 @@ function deletingAll(){
   e1.textContent = ""
 }
 
+function searchItems(){
+  if(fullSearch.value == "dress"){
+    showB()
+  }else if(fullSearch.value == "top"){
+    showC()
+  }else if(fullSearch.value == "jeans"){
+    showD()
+  }else if(fullSearch.value == "blazer"){
+    showE()
+  }
+
+}
 
 //=============eventsSelection====================//
 
@@ -158,6 +171,7 @@ c.addEventListener("click",showC)
 d.addEventListener("click",showD)
 e.addEventListener("click",showE)
 del.addEventListener("click",deletingAll)
+fullSearch.addEventListener("keyup",searchItems)
 
 
 //=============== data display section===================== //

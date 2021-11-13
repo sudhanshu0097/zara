@@ -132,9 +132,9 @@ cart0.addEventListener("click",goToCartPage);
 fltr.addEventListener("click",openFilterPage)
 close.addEventListener("click",closeFilterPage)
 wmn.addEventListener("click",goToProductPage)
-mn.addEventListener("click",samePage)
-kds.addEventListener("click",samePage)
-fullSearch.addEventListener("click",goToSearchPage)
+mn.addEventListener("click",samePage);
+kds.addEventListener("click",samePage);
+fullSearch.addEventListener("click",goToSearchPage);
 
 
 
