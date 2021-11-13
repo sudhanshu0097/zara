@@ -104,7 +104,9 @@ function goToCartPage(){
     }
 
     function goToProductPage(){
-        window.location.href = "productDisplay.html"
+        var anotherdata = JSON.parse(localStorage.getItem("anotherData"))
+       displayProduct(anotherdata)
+        
     }
 
     function samePage(){

@@ -1663,6 +1663,7 @@ color:"yellow",
 
 ]
 
+localStorage.setItem("anotherData",JSON.stringify(totalWomanProducts));
 localStorage.setItem("zaraProductData",JSON.stringify(totalWomanProducts));
 
 function showB(){
