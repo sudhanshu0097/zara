@@ -17,7 +17,7 @@ var sixth = document.getElementById("sixth");
 var login = document.getElementById("login")
 var cart0 = document.getElementById("cart0");
 var help = document.getElementById("help");
-var cartcnt = document.getElementById("cartcnt")
+var cartcnt = document.getElementById("cartcnt");
 var cartItemCount = JSON.parse(localStorage.getItem("cartItemCount"))
 cartcnt.textContent = cartItemCount
 var conti = document.getElementById("continue")
@@ -110,14 +110,14 @@ first.addEventListener("click",goToWomenPage);
   console.log(cartImage)
 
   var cartTotalPrice = JSON.parse(localStorage.getItem("cartTotalPrice"))
-  totalPrice.textContent = cartTotalPrice
+  
 
 
   displayCartProducts(cartStore);
 
   function displayCartProducts(cartStore){
-      cartStore.map(function(item){
-          console.log(item)
+      cartImage.textContent = ""
+      cartStore.map(function(item,index){
         var cartInnerDivs = document.createElement("div");
         cartInnerDivs.setAttribute("id","cartInnerDiv");
 
@@ -127,9 +127,15 @@ first.addEventListener("click",goToWomenPage);
         var eleImg = document.createElement("img");
         var clrSpan = document.createElement("div");
         var priceSpan = document.createElement("div");
+        var delbtn = document.createElement("div")
+        delbtn.setAttribute("id","delbtn")
 
         clrSpan.textContent = "Color :-"
         priceSpan.textContent = "₹ "
+        delbtn.innerHTML = `<span class="material-icons-outlined">
+        delete_outline
+        </span>`
+        totalPrice.textContent = cartTotalPrice
 
         eleName.setAttribute("id","eleName")
         elePrice.setAttribute("id","elePrice")
@@ -146,9 +152,30 @@ first.addEventListener("click",goToWomenPage);
 
         clrSpan.append(eleColor)
         priceSpan.append(elePrice)
-        cartInnerDivs.append(eleImg,eleName,priceSpan,clrSpan)
+        cartInnerDivs.append(eleImg,eleName,priceSpan,clrSpan,delbtn)
 
+
+        delbtn.addEventListener("click",function(){
+            deleteCartItem(item,index)
+        })
         cartImage.append(cartInnerDivs)
 
       })
+  }
+
+function deleteCartItem(item,index){
+cartStore.splice(index,1)
+// console.log(item)
+cartItemCount = cartItemCount - 1
+console.log(cartItemCount)
+localStorage.setItem("cartItemCount",JSON.stringify(cartItemCount))
+cartTotalPrice = cartTotalPrice - item.price
+console.log(cartTotalPrice)
+localStorage.setItem("cartTotalPrice",JSON.stringify(cartTotalPrice))
+console.log(index)
+localStorage.setItem("cartStore",JSON.stringify
+(cartStore))
+displayCartProducts(cartStore)
+window.location.href = "cart.html"
+// localStorage.setItem
   }
