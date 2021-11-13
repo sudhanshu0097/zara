@@ -38,6 +38,10 @@
   var cartItemCount = JSON.parse(localStorage.getItem("cartItemCount"))
   cartcnt.textContent = cartItemCount
   var imageDiv = document.querySelector(".imageDiv")
+  var gtmn = document.getElementById("gtmn")
+  var gtwmn = document.getElementById("gtwmn")
+  var gtkd = document.getElementById("gtkd")
+  var gtlil = document.getElementById("gtlil")
   // var inside1 = document.querySelector(".inside1")
 
   //----------------- function section------------------ //
@@ -187,9 +191,13 @@
     window.location.href = "cart.html"
   }
 
-  // function goToProductPage(){
-  //   console.log("product")
-  // }
+  function goToWomanProductPage(){
+    window.location.href = "productDisplay.html"
+  }
+
+  function samePage(){
+    alert("Sorry! Produts are sold & we are left with women stock, please try next time")
+  }
 
 
   //----------------addEventListener section-------------------//
@@ -216,5 +224,9 @@
   sixth.addEventListener("click",goToAthleticzPage);
   help.addEventListener("click",goToHelpPage);
   cart0.addEventListener("click",goToCartPage);
-  // section_box.addEventListener("click",goToProductPage);
+  gtmn.addEventListener("click",samePage);
+  gtwmn.addEventListener("click",goToWomanProductPage);
+  gtkd.addEventListener("click",samePage);
+  gtlil.addEventListener("click",samePage);
+
   
