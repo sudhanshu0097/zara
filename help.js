@@ -36,6 +36,7 @@ function deactivation(){
 
 function goToWomenPage(){
     console.log("hello")
+    window.location.href = "productDisplay.html"
   }
   function goToKidsPage(){
       console.log("helo")
