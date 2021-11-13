@@ -35,6 +35,9 @@ var cartcnt = document.getElementById("cartcnt")
 var cartItemCount = JSON.parse(localStorage.getItem("cartItemCount"))
 cartcnt.textContent = cartItemCount
 var fullSearch = document.getElementById("fullSearch")
+var wmn = document.getElementById("wmn")
+var mn = document.getElementById("mn")
+var kds = document.getElementById("kds")
 
 //=============functionSelection====================//
 
@@ -100,6 +103,18 @@ function goToCartPage(){
         filterDiv.style.display = "none"
     }
 
+    function goToProductPage(){
+        window.location.href = "productDisplay.html"
+    }
+
+    function samePage(){
+        alert("Sorry! Produts are sold & we are left with women stock, please try next time")
+    }
+
+    // function goToSearchPage(){
+    //     window.location.href = "search.html"
+    // }
+
 //=============eventsSelection====================//
 
 tgl2.addEventListener("click",deactivation);
@@ -116,6 +131,10 @@ help.addEventListener("click",goToHelpPage);
 cart0.addEventListener("click",goToCartPage);
 fltr.addEventListener("click",openFilterPage)
 close.addEventListener("click",closeFilterPage)
+wmn.addEventListener("click",goToProductPage)
+mn.addEventListener("click",samePage)
+kds.addEventListener("click",samePage)
+// fullSearch.addEventListener("click",goToSearchPage)
 
 
 
