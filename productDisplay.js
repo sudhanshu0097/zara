@@ -161,13 +161,7 @@ var low = document.getElementById("low");
 var high = document.getElementById("high");
 displayProduct(zaraData)
 
-low.addEventListener("click",function(){
-    sortByLowPrice(zaraData)
-})
 
-high.addEventListener("click",function(){
-    sortByHighPrice(zaraData)
-})
 
 
 blue.addEventListener("click",function(){
@@ -354,7 +348,13 @@ function displayProduct(zaraData){
 
     });
 
+low.addEventListener("click",function(){
+    sortByLowPrice(zaraData)
+})
 
+high.addEventListener("click",function(){
+    sortByHighPrice(zaraData)
+})
 
 
     function displaySingleProduct(item){
