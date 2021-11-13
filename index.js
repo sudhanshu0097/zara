@@ -37,6 +37,7 @@
   var cartcnt = document.getElementById("cartcnt")
   var cartItemCount = JSON.parse(localStorage.getItem("cartItemCount"))
   cartcnt.textContent = cartItemCount
+  var imageDiv = document.querySelector(".imageDiv")
   // var inside1 = document.querySelector(".inside1")
 
   //----------------- function section------------------ //
@@ -150,22 +151,23 @@
   }
 //========== toggle functions============ //
   function goToWomenPage(){
-    console.log("hello")
+    console.log("woman")
+    window.location.href = "productDisplay.html"
   }
   function goToKidsPage(){
-      console.log("helo")
+      console.log("kid")
   }
   function goToLilPage(){
-      console.log("helo")
+      console.log("lil")
   }
   function goToManPage(){
-      console.log("helo")
+      console.log("man")
   }
   function goToAthleticzPage(){
-      console.log("hleo")
+      console.log("athl")
   }
   function goToShoesBagsPage(){
-      console.log("hlo")
+      console.log("shoes")
   }
   //========== toggle functions ends here============ //
 
@@ -184,6 +186,10 @@
   function goToCartPage(){
     window.location.href = "cart.html"
   }
+
+  // function goToProductPage(){
+  //   console.log("product")
+  // }
 
 
   //----------------addEventListener section-------------------//
@@ -209,4 +215,6 @@
   fifth.addEventListener("click",goToShoesBagsPage);
   sixth.addEventListener("click",goToAthleticzPage);
   help.addEventListener("click",goToHelpPage);
-  cart0.addEventListener("click",goToCartPage)
+  cart0.addEventListener("click",goToCartPage);
+  // section_box.addEventListener("click",goToProductPage);
+  

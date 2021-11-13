@@ -258,6 +258,7 @@
     font-weight: 500;
     margin-bottom: 20px;
     /* margin-left: 35px; */
+    cursor: pointer;
   }
   
   .toggleBar2 >ul:nth-child(2){
