@@ -21,6 +21,9 @@ var cartcnt = document.getElementById("cartcnt")
 var cartItemCount = JSON.parse(localStorage.getItem("cartItemCount"))
 cartcnt.textContent = cartItemCount
 var conti = document.getElementById("continue")
+var crdn = document.getElementById("crdn");
+var cv = document.getElementById("cv")
+
 // var conti = document.getElementById("continue")
 
 
@@ -82,9 +85,17 @@ function goToCartPage(){
   }
 
   function goToOtp(){
-      window.location.href = "otp.html"
-      console.log("hlo")
-  } 
+    if(crdn.value.length > 0 && crdn.value.length == 16){
+        if(cv.value.length > 0 && cv.value.length == 3){
+            window.location.href = "otp.html"
+        }else{
+            alert("check you cvv")
+        }
+    }else{
+        alert("card number should be of 16 numbers")
+    } 
+} 
+   
 
 
 //=============eventsSelection====================//
