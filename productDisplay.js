@@ -111,10 +111,6 @@ function goToCartPage(){
         alert("Sorry! Produts are sold & we are left with women stock, please try next time")
     }
 
-    // function goToSearchPage(){
-    //     window.location.href = "search.html"
-    // }
-
 //=============eventsSelection====================//
 
 tgl2.addEventListener("click",deactivation);
@@ -134,7 +130,6 @@ close.addEventListener("click",closeFilterPage)
 wmn.addEventListener("click",goToProductPage)
 mn.addEventListener("click",samePage)
 kds.addEventListener("click",samePage)
-// fullSearch.addEventListener("click",goToSearchPage)
 
 
 
